@@ -1,7 +1,7 @@
-#!/usr/bin/python
+#!/usr/local/bin/python3
 # -*- coding: utf-8 -*-
 
-from HTMLParser import HTMLParser
+from html.parser import HTMLParser
 import re
 
 # Character 	Treatment outside PG (orthographic)     	Treatment inside PG (phonetic)
@@ -120,7 +120,7 @@ if 1 and __name__ == '__main__':
 		parser = LastNParser(test)
 		for i in range(3):
 			x,y,z = parser.last_n_words(i)
-			print
-			print i, colorCmd + x + resetCmd
-			print i, ' '*len(x) + colorCmd + y + resetCmd
-			print i, ' '*len(x+y) + colorCmd + z + resetCmd
+			print()
+			print(i, colorCmd + x + resetCmd)
+			print(i, ' '*len(x) + colorCmd + y + resetCmd)
+			print(i, ' '*len(x+y) + colorCmd + z + resetCmd)

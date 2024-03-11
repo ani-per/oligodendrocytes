@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/local/bin/python3
 # -*- coding: utf-8 -*-
 
 # http://mashimonator.weblike.jp/storage/library/20090118_001/demo/ruby2/index.html
@@ -59,7 +59,7 @@ else:
 	PG_BRACKET_E = '[\)\]]'
 	PG_MIDDLE    = '[^\)\]]+'
 
-PG_OR = QUOTE_E + ur' or ' + QUOTE_S
+PG_OR = QUOTE_E + r' or ' + QUOTE_S
 PG_BRACKET_INSTRUCTION = '[\[\(]' + u'(?P<in>emphasize[^\]\)]*|pause|read slowly[^\]\)]*)' + '[\]\)]'
 
 if use_tags:
